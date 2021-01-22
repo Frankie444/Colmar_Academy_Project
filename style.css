@@ -15,15 +15,6 @@ a {
   width: 80%;
 }
 
-/* nav1 using Bootstrap below here (redundant now) */
-
-.navbar {
-  color: #404040;
-}
-
-.navbar img {
-  font-weight: lighter;
-}
 
 /* ****** nav2 using flex instead of Bootstrap below here */
 
@@ -49,9 +40,8 @@ header li {
   /*get nav items on right */
   display: inline;
   padding-right: 24px;
-  
-}
 
+}
 
 /* ****** first section (banner) below here */
 
@@ -71,11 +61,13 @@ header li {
 #first-section .side-content {
   justify-content: left;
   align-self: center;
-  margin-top: 10px;
-  margin-bottom: 32px;
-  margin-left: -50px;
-  margin-right: 40px;
+ 
 }
+
+#first-section .main-content img {
+  width: 100%;
+}
+
   
 #first-section h1 {
   padding-bottom: 20px;
@@ -112,12 +104,15 @@ header li {
 .side-content a {
   text-decoration: none;
   font-weight:600;
+  color: #404040;
 }
 
 #information .main-content {
   justify-content: center;
-  padding-top: 32px;
-  width: 60%;
+  margin: 32px 24px;
+}
+#information .main-content img {
+  width: 100%;
 }
 
 #information .side-content {
@@ -142,9 +137,6 @@ header li {
   padding: 16px;
 }
 
-#information .side-content .content-image-box .media-container {
-  width: 35%;
-}
 /* guest content needs a different colour box! */
 #guest {
   background-color: #E0E0E0;
@@ -175,7 +167,6 @@ header li {
   margin-bottom: 32px;
   display: inline-flex;
   justify-items: space-between;
-  
 }
 
 .single-course {
@@ -208,69 +199,41 @@ header li {
   font-weight: bold;
 }
 
-  
-
-
 /* ****** thesis part goes in below here */
   
-
-
-
-#thesis .main-content {
-    justify-content: center;
-    width: 60%;
-    padding: 24px;
-}
-
-#thesis .side-content {
-  margin-right: 30px;
-  margin-left: -250px;
-  width: 40%
-}
-
 
 #thesis .content-image-box .media-container {
   width: 35%;
   padding: 16px;
 }
 
-
-#thesis .content-image-box {
-  margin-top: 24px;  
+#thesis .side-content {
+  margin-right: 1rem;
+  margin-top: 32px;
 }
 
 #thesis h2 {
   font-weight: bolder;
-  margin-top: 32px;
+  padding: 24px 0 0 0;
   text-align: center;
 }
 
 #thesis .text-content {
-  padding: 1rem 1rem;
-}
-
-
-video {
-  width: 70%;
-  height: auto;
+  padding: 16px 0;
 }
 
  /* fisma content needs a different colour box! */
-
 #fisma {
   background-color:#D0D0D0
-  
-  }
+}
 
 
 #fisma .media-container {
- 
   width: 35%;
   height: auto;
 }
-  
-  
-#thesis .main-content {
+
+#thesis video {
   width: 100%;
 }
   
@@ -280,8 +243,6 @@ video {
 footer {
   font-size: 12px;
   color: #404040;  
-  width: 100%;
-  overflow: hidden;
   border-top: solid #E0E0E0 0.1px;
   padding: 16px 24px;
 }
@@ -291,21 +252,17 @@ footer a {
   color: #404040;
 }
 
-footer p .left { 
-  float: left; 
-}
-
-footer p .right { 
-  float: right; 
-}
-
 p.left { float: left; }
 p.right { float: right; }
 
+/* **** media queries */
+/* **** example media queries below */
 
 
 
-  /* ****** general flex box settings here */
+
+
+  /* ******  flex box settings here */
 
   .flex-content {
     display: flex;
@@ -331,6 +288,9 @@ p.right { float: right; }
     display: flex;
     flex-direction: row;
   }
+
+  /* flex settings for .side-content below here*/
+  
   .content-image-box .media-container {
     width: 35%;
   }
