@@ -6,40 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 
 <body>
       		  
-
-
-<header>
+	<header>
  	<!-- Nav Bar -->
 		<div class="nav2">
-			<div class="logo">
+			<div class="left" id="logo">
 				<img src="resources/images/ic-logo.svg"><strong>COLMAR</strong>ACADEMY
 			</div>
-			<nav>
-				<ul>
+			
+				<ul class="right">
 					<li>
-						On campus
+						<a href="#">On campus</a>
 					</li>
 					<li>
-						Online
+						<a href="#">Online</a>
 					</li>
 					<li>
-						For companies
+						<a href="#">For companies</a>
 					</li>
 					<li>
-						Sign in
+						<a href="#">Sign in</a>
 					</li>
 				</ul>
-			</nav>
 		</div>
-
-</header>
+		
+	</header>
   
   <!-- First section / banner  -->
 	<div class="flex-content" id="first-section">
@@ -51,6 +48,7 @@
 	</div>
   
   <!-- Information -->
+
 	<div class="flex-content" id="information">
 		<div class="main-content">
 				<div class="media-container"><img src="resources/images/information-main.jpg"></div>
@@ -84,56 +82,56 @@
 			</div>
 		</div>
 	</div>
-  
+ 
   <!-- Courses -->
 	<div id="courses">
 		<h2>Start learning</h2>
-		<div class="flex-content" id="courses-row-container">
+		<div class="flex-content courses-row-container">
 				<div class="single-course">
-				<div class="media-container"><img src="resources/images/course-software.jpg"></div>
+				<div><img src="resources/images/course-software.jpg"></div>
 				<div class="text-content">
 				<h3>Software engineering</h3>
-				<h4>COURSES</h4>
+				<h5>COURSES</h5>
 				<p>Web Development, Mobile Development, iOT, APIs</p>
 				</div>
 				</div>
 				
 				<div class="single-course">
-				<div class="media-container"><img src="resources/images/course-computer-art.jpg"></div>
+				<div><img src="resources/images/course-computer-art.jpg"></div>
 				<div class="text-content">
 				<h3>Computer art</h3>
-				<h4>COURSES</h4>
-				<p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+				<h5>COURSES</h5>
+				<p>Imaging & Design, Web Design, Motion Graphics</p>
 				</div>
 				</div>
 				
 				<div class="single-course">
-			 	<div class="media-container"><img src="resources/images/course-design.jpg"></div>
+			 	<div><img src="resources/images/course-design.jpg"></div>
 				<div class="text-content">
 				<h3>Design</h3>
-				<h4>COURSES</h4>
+				<h5>COURSES</h5>
 				<p>User Experience Design, User Research, Visual Design</p>
 				</div>
 				</div>
 			
 		</div>
     
-		<div class="flex-content" id="courses-row-container">
+		<div class="flex-content courses-row-container">
 				
 				<div class="single-course">
-				<div class="media-container"><img src="resources/images/course-data.jpg"></div>
-				<div class="text-content">
-				<h3>Data</h3>
-				<h4>COURSES</h4>
-				<p>Data Science, Big Data, SQL, Data Visualization</p>
-				</div>
+					<div class="media-container"><img src="resources/images/course-data.jpg"></div>
+					<div class="text-content">
+					<h3>Data</h3>
+					<h5>COURSES</h5>
+					<p>Data Science, Big Data, SQL, Data Visualization</p>
+					</div>
 				</div>
 			
 				<div class="single-course">
 				<div class="media-container"><img src="resources/images/course-business.jpg"></div>
 				<div class="text-content">
 				<h3>Business</h3>
-				<h4>COURSES</h4>
+				<h5>COURSES</h5>
 				<p>Product Development, Business Development, Startup</p>
 				</div>
 				</div>
@@ -142,7 +140,7 @@
 				<div class="media-container"><img src="resources/images/course-marketing.jpg"></div>
 				<div class="text-content">
 				<h3>Marketing</h3>
-				<h4>COURSES</h4>
+				<h5>COURSES</h5>
 				<p>Analytics, Content Marketing, Mobile Marketing</p>
 				</div>
 				</div>

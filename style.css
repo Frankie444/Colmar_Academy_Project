@@ -16,14 +16,16 @@ a {
 }
 
 
-/* ****** nav2 using flex instead of Bootstrap below here */
+/**** NavBar here */
 
 .nav2 {
-  display: flex;
   align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  color: #404040;
+}
+
+#logo {
+  padding-left: 24px;
 }
 
 header a {
@@ -31,20 +33,18 @@ header a {
   text-decoration: none;
 }
 
-header .logo {
-  display: flex;
-  flex-grow: 3;
-  padding-left: 24px;
-}
 
 header li {
-  /*get nav items on right */
+  /*get nav items in line */
   display: inline;
   padding-right: 24px;
-
 }
 
-/* ****** first section (banner) below here */
+
+header .left { float: left; }
+header .right { float: right; }
+
+/**** first section (banner) here */
 
 #first-section {
   color: #404040;
@@ -52,6 +52,7 @@ header li {
 
 #first-section {
   background-color:#D3D3D3;
+  margin-top: 32px;
 }
   
 #first-section .main-content {
@@ -62,14 +63,11 @@ header li {
 #first-section .side-content {
   justify-content: left;
   align-self: center;
-  
- 
 }
 
 #first-section .main-content img {
   width: 100%;
 }
-
   
 #first-section h1 {
   padding-bottom: 20px;
@@ -100,11 +98,8 @@ header li {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* ****** info section below here */
+/**** info section here */
 
-#information {
-
-}
 .side-content a {
   text-decoration: none;
   font-weight:600;
@@ -129,7 +124,6 @@ header li {
 #Orientation {
   border-bottom: solid #E0E0E0 0.1px;
 }
-
   
 #information .main-content h3 {
   padding-top: 2rem;
@@ -153,17 +147,24 @@ header li {
   margin-bottom: 16px;
 }
 
-/* ****** courses section goes in below here */
+/**** courses section here */
 
 #courses {
   background-color: #E0E0E0;
   padding-top: 0;
-  
  }
 
 #courses a {
   text-decoration: none;
   color:#404040;
+}
+
+.courses-row-container {
+  margin-left: 72px;
+  margin-right: 72px;
+  margin-bottom: 32px;
+  display: inline-flex;
+  justify-items: space-between;
 }
 
 #courses-row-container {
@@ -177,8 +178,14 @@ header li {
 .single-course {
   display: block;
   justify-content: center;
-  padding: 10px;
-  
+  padding: 18px;
+  max-width: 450px;
+  max-height: 450px;
+
+}
+
+.single-course .text-content {
+  max-width: 450px;
 }
 
 .single-course img {
@@ -204,7 +211,7 @@ header li {
   font-weight: bold;
 }
 
-/* ****** thesis part goes in below here */
+/**** thesis part here */
   
 
 #thesis .content-image-box .media-container {
@@ -232,7 +239,6 @@ header li {
   background-color:#D0D0D0
 }
 
-
 #fisma .media-container {
   width: 35%;
   height: auto;
@@ -242,8 +248,7 @@ header li {
   width: 100%;
 }
   
-  
-/* ******* footer */
+/**** footer */
   
 footer {
   font-size: 12px;
@@ -260,7 +265,7 @@ footer a {
 p.left { float: left; }
 p.right { float: right; }
 
-/* **** media queries */
+/**** media queries */
 
 @media (max-width: 768px) {
   .flex-content  {
@@ -269,10 +274,7 @@ p.right { float: right; }
 
 }
 
-
-
-
-  /* ******  flex box settings here */
+  /****  flex box settings here */
 
   .flex-content {
     display: flex;
@@ -301,7 +303,7 @@ p.right { float: right; }
     flex-grow: 1;
   }
 
-  /* flex settings for .side-content below here*/
+  /**** flex settings for .side-content here*/
   
   .content-image-box .media-container {
     width: 35%;
