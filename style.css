@@ -110,15 +110,16 @@ header li {
 
 #information .main-content {
   justify-content: center;
-  margin: 32px 24px;
+  margin: 24px 24px;
 }
 #information .main-content img {
   width: 100%;
+ 
 }
 
 #information .side-content {
   width: 40%;
-  padding-top: 1em;
+  padding-top: 2.5rem;
   border-left: solid #E0E0E0 1px;
 }
 
@@ -253,15 +254,16 @@ footer a {
   color: #404040;
 }
 
-p .left { float: left; }
+p.left { float: left; }
 p.right { float: right; }
 
 /* **** media queries */
 
 @media (max-width: 768px) {
-  .flex-content {
+  .flex-content  {
     flex-direction: column;
   }
+
 }
 
 
@@ -289,9 +291,11 @@ p.right { float: right; }
     padding-bottom: 32px;
   }
 
-  .flex content #courses-row-container {
+  .flex-content #courses {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
   }
 
   /* flex settings for .side-content below here*/
