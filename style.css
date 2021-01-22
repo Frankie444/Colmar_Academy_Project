@@ -26,6 +26,11 @@ a {
   color: #404040;
 }
 
+header a {
+  color: #404040;
+  text-decoration: none;
+}
+
 header .logo {
   display: flex;
   flex-grow: 3;
@@ -248,12 +253,16 @@ footer a {
   color: #404040;
 }
 
-p.left { float: left; }
+p .left { float: left; }
 p.right { float: right; }
 
 /* **** media queries */
 
-
+@media (max-width: 768px) {
+  .flex-content {
+    flex-direction: column;
+  }
+}
 
 
 
